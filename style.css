@@ -25,8 +25,14 @@ a{
     display: flex;
     justify-content: space-evenly;
     /* position: absolute; */
-    top: 10%;
+    top: 0%;
     background-color: rgb(0, 0, 0);
+    position: sticky;
+    z-index: 2;
+    /* mix-blend-mode: soft-light; */
+    margin: 0px auto;
+    
+    
 }
 
 
@@ -35,7 +41,7 @@ a{
     align-self: center;
     justify-self: center;
     font-size: 40px;
-    
+    /* mix-blend-mode: screen; */
     width: 40vw;
     /* position: relative; */
 }
@@ -44,6 +50,7 @@ a{
     align-self: center;
     justify-self: center;
     color: white;
+    mix-blend-mode: lighten;
     animation: fall 0.5s ease-in 1;
 }
 @keyframes fall{
@@ -204,8 +211,56 @@ background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
 }
 #line{
     position: relative;
-    height: 5px;
+    height: 3px;
     width: 100vw;
+    top: 40%;
+    background-color: yellow;
+}
+
+.horizontal{
+    position: relative;
+    height: 200px;
+    width: 3px;
+    background-color: yellow;
+    top: 35%;
+    display: inline-block;
+    z-index: 0;
+    animation: move 2s ease-in 1;
+}
+
+.study{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:0%;
+    z-index: 1;
+}
+.one{
+    left: 10%;
     top: 30%;
-    background-color: red;
+}
+
+.two{
+    left: 30%;
+    top: 30%;
+}
+.three{
+    left: 50%;
+    top: 33%;
+}
+.four{
+    left: 70%;
+    top: 25%;
+}
+.ones{
+    left: 0%;
+}
+.text{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 100%;
+    font-size: larger;
+    
+    /* font-family: "Sofia", cursive; */
 }
